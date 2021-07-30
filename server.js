@@ -21,32 +21,24 @@ app.use(express.static('website'));
 
 
 // Setup Server
-
 const port = 8000;
-/* Spin up the server*/
-const server = app.listen(port, ()=>{
-  console.log(`http://localhost:${port}`
-  );
-  console.log(`running on localhost: ${port}`
-  )});
 
-// GET route
-app.get('/all', (request, response) => {
-    response.send(projectData);
-    return projectData;
+const server = app.listen(port, () => { console.log(`server running on http://localhost:${port}`) });
+
+// Get to returns the projectData object
+app.get('/all', (req, res) => {
+    res.send(projectData)
 });
 
-
-// POST route
-const data = [];
-app.post('/add', (request,response) => {
-    let newEnter = {
-      data: request.body.data,
-      temp: request.body.temp,
-      content: request.body.content
-    }
-    projectData = newEnter;
-    data.push(newEnter);
-    response.send(newEnter);
+// Post adds incoming data to projectData
+const addData = [];
+app.post('/addData', (req, res) => {
+    const newEntry = {
+        date: req.body.date,
+        temp: req.body.temp,
+        content: req.body.content
+    };
+    projectData = newEntry;
+    console.log(projectData)
+    res.send(newEntry);
 });
-
