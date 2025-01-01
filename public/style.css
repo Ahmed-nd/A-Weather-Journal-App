@@ -1,45 +1,43 @@
-body{
+body {
     background: #fffff8;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('background.jpg');
     background-size: cover;
-
 }
 
-#app{
+#app {
     width: 500px;
-    background: rgba(0, 0, 138,0.7);
+    background: rgba(0, 0, 138, 0.7);
     top: 50%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%) ;
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 20px;
     border-radius: 20px;
-    
 }
-#entryHolder{
+#entryHolder {
     width: auto;
 }
 
-#date{
+#date {
     font-size: 20px;
     margin: 7px 12px;
 }
 
-#temp{
+#temp {
     font-size: 20px;
     margin: 7px 12px;
 }
 
-#content{
+#content {
     font-size: 20px;
     margin: 7px 12px;
 }
 
-#entry > .title{
+#entry > .title {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
@@ -50,7 +48,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 /*  Basic Styling To Override Default For Basic HTML Elements */
-.holder label{
+.holder label {
     margin: 10px;
     padding: 0;
     font-weight: bold;
@@ -58,7 +56,9 @@ body{
     color: white;
 }
 
-.holder input,.holder textarea, .entry{
+.holder input,
+.holder textarea,
+.entry {
     margin: 10px 0;
     width: 100%;
     border: 0px;
@@ -69,7 +69,7 @@ body{
     color: white;
 }
 
-.holder button{
+.holder button {
     position: unset;
     border: none;
     outline: none;
@@ -81,13 +81,13 @@ body{
     margin-left: 5px;
     font-weight: normal;
 }
-.holder button:hover{
+.holder button:hover {
     cursor: pointer;
     background: #ffc107;
     color: #000;
     font-weight: bold;
 }
-h1{
+h1 {
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
@@ -95,7 +95,7 @@ h1{
     color: white;
 }
 
-.holder textarea{
+.holder textarea {
     height: 70px;
 }
 
@@ -107,20 +107,20 @@ button:focus {
     outline: none;
 }
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
+}
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
+}
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #f0d43a;
     font-family: 'Oswald', sans-serif;
-
-} 
+}
